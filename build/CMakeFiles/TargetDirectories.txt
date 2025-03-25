@@ -1,0 +1,11 @@
+/Users/illiafransua/Desktop/Практика/file_Storage/build/CMakeFiles/test.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/CMakeFiles/edit_cache.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/CMakeFiles/rebuild_cache.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/src/CMakeFiles/file_storage.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/src/CMakeFiles/test.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/src/CMakeFiles/edit_cache.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/src/CMakeFiles/rebuild_cache.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/tests/CMakeFiles/file_storage_tests.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/tests/CMakeFiles/test.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/tests/CMakeFiles/edit_cache.dir
+/Users/illiafransua/Desktop/Практика/file_Storage/build/tests/CMakeFiles/rebuild_cache.dir
