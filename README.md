@@ -1,7 +1,5 @@
 # CFileManager 🦎
 
----
-
 ## Project Description
 
 This project is a library for working with file storage. It includes functions for:
@@ -12,8 +10,6 @@ This project is a library for working with file storage. It includes functions f
 - Saving, loading, and updating file metadata (with UUID, file name, size, and timestamps).
 
 **Note:** This project only provides tests to check the library’s functionality. How you use this tool (or library) in your projects is up to you.
-
----
 
 ## Features
 
@@ -30,8 +26,6 @@ This project is a library for working with file storage. It includes functions f
 
 - **Utilities:**  
   Extra functions to check if a path is a directory, get a file extension, and more.
-
----
 
 ## Test Structure
 
@@ -53,8 +47,6 @@ The project has several test sets that cover all features:
     - Remove a file (`remove_file`).
     - Copy a file (`copy_file`).
     - Get file extension (`get_file_extension`).
-
----
 
 ## Build and Run Tests
 
@@ -94,8 +86,6 @@ Example build output:
 [100%] Built target file_storage_tests
 ```
 
----
-
 ### Running Tests
 
 Once the build is successful, you can run the tests with the following command:
@@ -114,15 +104,11 @@ Utils tests passed!
 All tests passed!
 ```
 
----
-
 ## Requirements
 
 - C Compiler (e.g., gcc or clang)
 - CMake
 - POSIX Environment (for working with the file system)
-
----
 
 ## Usage and Conclusion
 
