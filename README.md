@@ -1,7 +1,5 @@
 # CFileManager 🦎
 
-## Project Description
-
 This project is a library for working with file storage. It includes functions for:
 - Managing directories (creating, checking, deleting).
 - Validating files.
