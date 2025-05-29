@@ -1,28 +1,28 @@
 # CFileManager 🦎
 
-This project is a library for working with file storage. It includes functions for:
-- Managing directories (creating, checking, deleting).
-- Validating files.
-- Generating unique paths to save files.
-- Copying, deleting, and getting file information (like size and extension).
-- Saving, loading, and updating file metadata (with UUID, file name, size, and timestamps).
+CFileManager is a lightweight C library for managing file systems and file metadata. It provides a consistent API for:
+- Creating, verifying, and deleting directories
+- Validating file existence and structure
+- Generating unique file paths for safe storage
+- Copying and deleting files, and retrieving file attributes (e.g., size, extension)
+- Reading, writing, and updating file metadata (UUID, name, size, timestamps)
 
-**Note:** This project only provides tests to check the library’s functionality. How you use this tool (or library) in your projects is up to you.
+> **⚠️ Note:** This project includes unit tests for validating the library’s behavior. Integration and usage in production systems are left to the implementer.
 
 ## Features
 
-- **File and Directory Management:**  
-  Functions to create directories, check if a file exists, get file size, delete, and copy files.
+- **File & Directory Operations:**  
+  Create and delete directories, check file existence, retrieve file size, and copy files.
 
-- **Metadata Management:**  
-  Ability to save, load, and update file metadata. The metadata includes:
-    - `uuid` — unique file identifier.
-    - `filename` — file name.
-    - `size` — file size.
-    - `created_at` — creation time.
-    - `modified_at` — last modified time.
+- **Metadata Handling:**  
+  Store, retrieve, and update file metadata, including:
+    - `uuid` – unique file identifier
+    - `filename` – file name
+    - `size` – file size
+    - `created_at` – timestamp of creation
+    - `modified_at` – timestamp of last modification
 
-- **Utilities:**  
+- **Utility Functions:**  
   Extra functions to check if a path is a directory, get a file extension, and more.
 
 ## Test Structure
@@ -30,27 +30,25 @@ This project is a library for working with file storage. It includes functions f
 The project has several test sets that cover all features:
 
 1. **File Storage Tests:**
-    - Create test directories and files.
-    - Check file validation.
-    - Generate unique paths and save files.
-    - Clean up created files and directories.
+    - Create and validate test directories and files
+    - Generate unique paths and save files
+    - Clean up test artifacts
 
 2. **Metadata Tests:**
-    - Test saving (`save_metadata`), loading (`load_metadata`), and updating (`update_metadata`) metadata.
+    - Validate saving (`save_metadata`), loading (`load_metadata`), and updating (`update_metadata`) metadata
 
 3. **Utility Tests:**
-    - Check if a path is a directory (`is_directory`).
-    - Check if a file exists (`file_exists`).
-    - Get file size (`get_file_size`).
-    - Remove a file (`remove_file`).
-    - Copy a file (`copy_file`).
-    - Get file extension (`get_file_extension`).
+    - Check if path is a directory (`is_directory`)
+    - Verify file existence (`file_exists`)
+    - Get file size (`get_file_size`)
+    - Delete and copy files (`remove_file`, `copy_file`)
+    - Get file extension (`get_file_extension`)
 
-## Build and Run Tests
+## Build & Run Tests
 
 ### Building
 
-The project uses CMake for build configuration. Here is an example of the build process:
+This project uses CMake for build configuration. To compile the project:
 
 ```bash
 mkdir build
@@ -86,13 +84,13 @@ Example build output:
 
 ### Running Tests
 
-Once the build is successful, you can run the tests with the following command:
+After a successful build, run the tests using:
 
 ```bash
 ./tests/file_storage_tests
 ```
 
-Example output when running the tests:
+Expected output:
 
 ```
 File storage tests passed!
@@ -106,8 +104,8 @@ All tests passed!
 
 - C Compiler (e.g., gcc or clang)
 - CMake
-- POSIX Environment (for working with the file system)
+- POSIX Environment (for file system operations)
 
-## Usage and Conclusion
+## Usage & Conclusion
 
-The library provides a set of functions for working with the file system and metadata, and the tests demonstrate the correctness and stability of all components. How to integrate the library into your application depends on your needs: you can use its full functionality or choose individual modules.
+This library offers functions for managing files, directories, and metadata. The included tests verify the correctness and stability of all components. Integration is flexible — you can use the entire library or select only the modules you need, depending on your application requirements.
