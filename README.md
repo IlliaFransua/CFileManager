@@ -1,5 +1,4 @@
 # CFileManager 🦎
-
 CFileManager is a lightweight C library for managing file systems and file metadata. It provides a consistent API for:
 - Creating, verifying, and deleting directories
 - Validating file existence and structure
@@ -7,13 +6,11 @@ CFileManager is a lightweight C library for managing file systems and file metad
 - Copying and deleting files, and retrieving file attributes (e.g., size, extension)
 - Reading, writing, and updating file metadata (UUID, name, size, timestamps)
 
-> **⚠️ Note:** This project includes unit tests for validating the library’s behavior. Integration and usage in production systems are left to the implementer.
+> **⚠️ Note:** This project includes functional tests for validating the library's behavior. Integration and usage in production systems are left to the implementer.
 
 ## Features
-
 - **File & Directory Operations:**  
   Create and delete directories, check file existence, retrieve file size, and copy files.
-
 - **Metadata Handling:**  
   Store, retrieve, and update file metadata, including:
     - `uuid` – unique file identifier
@@ -21,22 +18,17 @@ CFileManager is a lightweight C library for managing file systems and file metad
     - `size` – file size
     - `created_at` – timestamp of creation
     - `modified_at` – timestamp of last modification
-
 - **Utility Functions:**  
   Extra functions to check if a path is a directory, get a file extension, and more.
 
 ## Test Structure
-
-The project has several test sets that cover all features:
-
+The project includes comprehensive functional and integration tests that cover all features:
 1. **File Storage Tests:**
     - Create and validate test directories and files
     - Generate unique paths and save files
     - Clean up test artifacts
-
 2. **Metadata Tests:**
     - Validate saving (`save_metadata`), loading (`load_metadata`), and updating (`update_metadata`) metadata
-
 3. **Utility Tests:**
     - Check if path is a directory (`is_directory`)
     - Verify file existence (`file_exists`)
@@ -45,20 +37,15 @@ The project has several test sets that cover all features:
     - Get file extension (`get_file_extension`)
 
 ## Build & Run Tests
-
 ### Building
-
 This project uses CMake for build configuration. To compile the project:
-
 ```bash
 mkdir build
 cd build
 cmake ..
 make
 ```
-
 Example build output:
-
 ```
 -- The C compiler identification is Clang 19.1.7
 -- Detecting C compiler ABI info
@@ -81,31 +68,23 @@ Example build output:
 [100%] Linking C executable file_storage_tests
 [100%] Built target file_storage_tests
 ```
-
 ### Running Tests
-
 After a successful build, run the tests using:
-
 ```bash
 ./tests/file_storage_tests
 ```
-
 Expected output:
-
 ```
 File storage tests passed!
 Metadata tests passed!
 Utils tests passed!
-
 All tests passed!
 ```
 
 ## Requirements
-
 - C Compiler (e.g., gcc or clang)
 - CMake
 - POSIX Environment (for file system operations)
 
 ## Usage & Conclusion
-
 This library offers functions for managing files, directories, and metadata. The included tests verify the correctness and stability of all components. Integration is flexible — you can use the entire library or select only the modules you need, depending on your application requirements.
